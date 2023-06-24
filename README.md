@@ -47,7 +47,11 @@ For any inquiries or questions, please me at jaistarx.in@gmail.com.
 
 Enjoy using the Weather App!
 
-## Reference
+## Workflow Diagram
+
+![arch](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/55cc26e6-26cf-4f12-b0df-5cf7fb3c1195)
+
+## Reference Diagram
 
 ![1](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/ad78ead5-c7df-41e8-a631-eebf89f39a20)
 
