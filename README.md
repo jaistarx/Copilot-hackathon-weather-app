@@ -1,8 +1,3 @@
-![7](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/8bc10bb0-9868-456c-bd8c-8b9047d090f9)
-![6](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/93dd076f-e8c8-49d8-b7e9-cff534b74107)
-![5](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/6bdcb40b-134d-44d4-850e-ac5dd9d792d4)
-![4](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/94fa8720-56b2-447d-afaf-090ecad0e272)
-![3](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/d1d956b6-c527-4a22-a805-3f3751b0cf60)
 # Weather App
 
 The Weather App is a Python application that allows users to check weather forecasts for different locations. It provides user authentication functionality with sign-in and sign-up options. Additionally, it includes a cache feature to store previously retrieved weather data for faster access. The app also offers a location suggestion feature to help users find the correct city name.
