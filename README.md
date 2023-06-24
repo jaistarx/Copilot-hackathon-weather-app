@@ -14,7 +14,7 @@ The Weather App is a Python application that allows users to check weather forec
 
 ## Installation
 
-1. Clone the repository: `https://github.com/Fastest-Coder-First/Copilot-hackathon.git`
+1. Clone the repository: `https://github.com/Fastest-Coder-First/weather-app-python-jaison.git`
 2. Navigate to the project directory: `cd Copilot-hackathon`
 3. Install the required dependencies
 
