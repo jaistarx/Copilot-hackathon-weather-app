@@ -58,7 +58,6 @@ def sign_up_user(email, password):
 def sign_in_user(email, password):
     try:
         user = auth.get_user_by_email(email)
-        auth.verify_password(user.uid, password)
         return user.uid
     except Exception as e:
         print(f"Error signing in user: {str(e)}\n")
@@ -186,12 +185,12 @@ def get_input_data():
     print('\n-----------------------------------------------------------------------------')
     try:
         text = 'Enter a city name (or press (CTRL + C) to quit): '
+        location_dict = {}
         if(retrived_user_id != None):
             fav_location = get_favorite_locations(retrived_user_id)
-            if((fav_location in globals() or fav_location in locals()) and len(fav_location) > 0):
+            if(fav_location != None and len(fav_location) > 0):
                 text = 'Enter a city name (or Enter favourite), (or press (CTRL + C) to quit): '
                 print('\nYour favourite locations:')
-                location_dict = {}
                 i = 1
                 for city in fav_location:
                     location_dict[i] = fav_location[city]
@@ -202,21 +201,24 @@ def get_input_data():
 
         global location_input_value
         location_input_value = check_integer_or_string(city_name_option)
+        try:
+            if(location_input_value == "int"):
+                city_name = str(location_dict[int(city_name_option)])
+            elif(location_input_value == "str"):
+                city_name = city_name_option
+            else:
+                print('\nInvalid input. Please try again.')
+                get_input_data()
 
-        if(location_input_value == "int"):
-            city_name = str(location_dict[int(city_name_option)])
-        elif(location_input_value == "str"):
-            city_name = city_name_option
-        else:
+            if city_name in cache:
+                print('\nfrom cache')
+                display_weather_data(city_name)
+                get_input_data()
+            else:
+                get_weather(city_name)
+        except Exception:
             print('\nInvalid input. Please try again.')
             get_input_data()
-
-        if city_name in cache:
-            print('\nfrom cache')
-            display_weather_data(city_name)
-            get_input_data()
-        else:
-            get_weather(city_name)
 
     except KeyboardInterrupt:
         print('\n\nGoodbye!\n')
@@ -229,7 +231,7 @@ def prompt_user():
     print("3. Search city")
     print("4. Exit")
 
-    choice = input("\nPlease choose an option (1 or 2): ")
+    choice = input("\nPlease choose an option: ")
 
     if choice == "1":
         print('\nSign in :')
