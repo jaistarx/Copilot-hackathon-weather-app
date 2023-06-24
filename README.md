@@ -1,3 +1,8 @@
+![7](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/8bc10bb0-9868-456c-bd8c-8b9047d090f9)
+![6](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/93dd076f-e8c8-49d8-b7e9-cff534b74107)
+![5](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/6bdcb40b-134d-44d4-850e-ac5dd9d792d4)
+![4](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/94fa8720-56b2-447d-afaf-090ecad0e272)
+![3](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/d1d956b6-c527-4a22-a805-3f3751b0cf60)
 # Weather App
 
 The Weather App is a Python application that allows users to check weather forecasts for different locations. It provides user authentication functionality with sign-in and sign-up options. Additionally, it includes a cache feature to store previously retrieved weather data for faster access. The app also offers a location suggestion feature to help users find the correct city name.
@@ -46,3 +51,19 @@ The Weather App utilizes the following technologies and APIs:
 For any inquiries or questions, please me at jaistarx.in@gmail.com.
 
 Enjoy using the Weather App!
+
+## Reference
+
+![1](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/ad78ead5-c7df-41e8-a631-eebf89f39a20)
+
+![2](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/f9237465-5244-4a40-a6a8-230d4979d39d)
+
+![3](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/58f474f6-63a5-4c16-9f31-b907f3f7ad52)
+
+![4](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/60778e75-8de5-4472-ab18-8480686e0f46)
+
+![5](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/9e829351-9ea5-4f60-9d92-6f545eed4875)
+
+![6](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/1a641a41-15e1-45ff-981d-60e947c7a5fc)
+
+![7](https://github.com/Fastest-Coder-First/weather-app-python-jaison/assets/57367854/7487e765-0557-4912-a7a1-2a7c1fe2459e)
