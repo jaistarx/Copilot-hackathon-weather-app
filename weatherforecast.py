@@ -231,37 +231,40 @@ def prompt_user():
     print("3. Search city")
     print("4. Exit")
 
-    choice = input("\nPlease choose an option: ")
-
-    if choice == "1":
-        print('\nSign in :')
-        print('\n-------------------------')
-        email = input("Enter your email: ")
-        password = input("Enter your password: ")
-        uid = sign_in_user(email, password)
-        if(uid == None):
-            return None
+    try:
+        choice = input("\nPlease choose an option: ")
+        if choice == "1":
+            print('\nSign in :')
+            print('\n-------------------------')
+            email = input("Enter your email: ")
+            password = input("Enter your password: ")
+            uid = sign_in_user(email, password)
+            if(uid == None):
+                return None
+            else:
+                print(f"User '{email}' Logged in successfully!")
+                return uid
+        elif choice == "2":
+            print('\nSign up')
+            print('\n-------------------------')
+            email = input("Enter your email: ")
+            password = input("Enter your password: ")
+            uid = sign_up_user(email, password)
+            if(uid == None):
+                return None
+            else:
+                print(f"User '{email}' created successfully!")
+                return uid
+        elif choice == "3":
+            get_input_data()
+        elif choice == "4":
+            exit()
         else:
-            print(f"User '{email}' Logged in successfully!")
-            return uid
-    elif choice == "2":
-        print('\nSign up')
-        print('\n-------------------------')
-        email = input("Enter your email: ")
-        password = input("Enter your password: ")
-        uid = sign_up_user(email, password)
-        if(uid == None):
-            return None
-        else:
-            print(f"User '{email}' created successfully!")
-            return uid
-    elif choice == "3":
-        get_input_data()
-    elif choice == "4":
+            print("Invalid choice. Please try again.\n")
+            prompt_user()
+    except KeyboardInterrupt:
+        print('\n\nGoodbye!\n')
         exit()
-    else:
-        print("Invalid choice. Please try again.")
-        prompt_user()
 
 def main():
     print('\n                           Weather Forecast')
